@@ -1,0 +1,31 @@
+<h2>New Consultation</h2>
+
+<%= form_for @consultation do |f| %>
+  <div class="row">
+
+    <div class="medium-3 columns">
+      <%= f.label :name %><br />
+      <%= f.text_field :name, autofocus: true, class: 'form' %>
+  	</div>
+
+    <div class="medium-3 columns">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, class: 'form' %>
+    </div>
+
+    <div class="medium-3 columns">
+      <%= f.label :description %><br />
+      <%= f.text_field :description, class: 'form' %>
+    </div>
+
+    <div class="medium-3 columns">
+      <%= f.label :phone_number %><br />
+      <%= f.text_field :phone_number, class: 'form' %>
+    </div>
+
+    <div class="medium-6 columns">
+      <%= f.submit "Submit Consultation" %>
+    </div>
+
+  </div>
+<% end %>

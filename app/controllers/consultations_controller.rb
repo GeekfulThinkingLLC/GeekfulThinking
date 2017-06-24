@@ -1,7 +1,11 @@
 class ConsultationsController < ApplicationController
 	def index
-		@consultation = Consultation.all
+		@consultations = Consultation.all
 	end
+
+	def new
+    @consultation = Consultation.new
+  end
 
   def create
     @consultation = Consultation.new(consultation_params)
@@ -10,7 +14,7 @@ class ConsultationsController < ApplicationController
       if @consultation.save
         format.html { redirect_to consultations_path, notice: 'Consultation saved.' }
       else
-        format.html { render :new }
+        format.html { redirect_to root_path }
       end
     end
   end
@@ -18,6 +22,6 @@ class ConsultationsController < ApplicationController
   private
 
   def consultation_params
-    params.require(:consultation).permit(:name, :description, :phone_number, :email, :company_name)
+    params.require(:consultation).permit(:name, :description, :phone_number, :email)
   end
 end
