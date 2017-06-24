@@ -1,31 +1,40 @@
-<h2>New Consultation</h2>
+<h2 class='text-center'>New Consultation</h2>
 
+<div class='form-padding'>
 <%= form_for @consultation do |f| %>
-  <div class="row">
+<div class="card">
 
-    <div class="medium-3 columns">
-      <%= f.label :name %><br />
+    <div class="card-divider medium-6 columns">
+      <%= f.label :name %>
       <%= f.text_field :name, autofocus: true, class: 'form' %>
   	</div>
 
-    <div class="medium-3 columns">
-      <%= f.label :email %><br />
+    <div class="card-divider medium-6 columns">
+      <%= f.label :email %>
       <%= f.email_field :email, class: 'form' %>
     </div>
 
-    <div class="medium-3 columns">
-      <%= f.label :description %><br />
-      <%= f.text_field :description, class: 'form' %>
+    <div class="card-divider medium-6 columns">
+      <%= f.label :company_name %>
+      <%= f.email_field :company_name, class: 'form' %>
     </div>
 
-    <div class="medium-3 columns">
-      <%= f.label :phone_number %><br />
+    <div class="card-divider medium-6 columns">
+      <%= f.label :phone_number %>
       <%= f.text_field :phone_number, class: 'form' %>
     </div>
 
-    <div class="medium-6 columns">
-      <%= f.submit "Submit Consultation" %>
+    <div class="card-divider medium-12 columns">
+      <%= f.label :description %>
+      <%= f.text_area :description, rows: 10, class: 'form' %>
     </div>
 
-  </div>
+
+    <div class="card-divider">
+      <%= f.submit "Submit Consultation", class: 'button expanded' %>
+    </div>
+
+</div>
 <% end %>
+</div>
+
