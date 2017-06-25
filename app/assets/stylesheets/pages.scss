@@ -3,3 +3,51 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import 'gritter';
+
+.form-padding {
+	padding: 10px 20rem 30px 20rem;
+}
+
+.card-divider {
+	padding: 1rem 3rem 0rem 3rem;
+	color: #ff1111;
+	background: none;
+}
+
+.text-center {
+	margin-top: 20px;
+}
+
+.form-text {
+	color: #ff1111;
+}
+
+label {
+	color: #fff;
+}
+
+.card > :last-child {
+	padding-bottom: .5rem;
+}
+
+.card-divider > :last-child {
+	margin-bottom: 20px;
+}
+
+.card {
+	background-color: rgba(0,0,0,.5);
+}
+
+.button.expanded {
+	background-color: #ff1111;
+}
+
+.button.expanded:hover {
+	background-color: #fff;
+	color: #ff1111;
+}
+
+.placeholder-text {
+	font-style: italic;
+	::-webkit-input-placeholder { color: green; }
+}
