@@ -1,5 +1,8 @@
 class ConsultationsController < ApplicationController
-	def index
+	
+  access all: [:create, :new], admin: :all
+
+  def index
 		@consultations = Consultation.all
 	end
 
