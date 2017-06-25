@@ -15,11 +15,14 @@
   </head>
 
   <body>
+    <div class="wrapper">
     <!-- Start Top Bar -->
       <%= render 'shared/nav_head' %>
     <!-- End Top Bar -->
 
     <%= yield %>
+    <%= render 'shared/footer' unless controller_name == 'sessions' || controller_name == 'registrations' %>
+    </div>
 
   </body>
 </html>
