@@ -4,11 +4,9 @@ Rails.application.routes.draw do
 
   resources :consultations
 
-  get 'pages/home'
+  get 'contact', to: 'pages#contact'
 
-  get 'pages/contact'
-
-  get 'pages/about'
+  get 'about', to: 'pages#about'
 
   root to: 'pages#home'
 end
