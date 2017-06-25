@@ -16,7 +16,28 @@
 
  */
 
+.nav-logo {
+	font-family: 'Frijole', cursive;
+	font-size: 1.9em;
+	padding-top: 10px;
+	padding-left: 20px;
+}
 
+.nav-links {
+	padding: 10px;
+}
+
+.nav-links li a {
+	font-size: 1.2em;
+	color: black;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.nav-links li a:hover {
+	background-color: white;
+	border-radius: 15px;
+}
 
 .img-styles {
 	width: 100%;
@@ -28,10 +49,31 @@
 }
 
 .social-text p {
-
+  
 }
 
 .main-row {
 	background-color: #d7d7d7
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
