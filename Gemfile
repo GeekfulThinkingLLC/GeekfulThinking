@@ -33,3 +33,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'foundation-rails', '~> 6.3', '>= 6.3.1.0'
 gem 'devise'
 gem 'petergate'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
