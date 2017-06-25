@@ -8,5 +8,9 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about'
 
+  get 'terms', to: 'pages#terms'
+
+  get 'privacy', to: 'pages#privacy'
+  
   root to: 'pages#home'
 end
