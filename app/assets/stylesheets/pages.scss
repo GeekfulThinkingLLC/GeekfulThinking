@@ -10,10 +10,14 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
+    height: 0px; /* .push must be the same height as .footer */
     padding-top: 50px;
+}
+
+.callout {
+	margin: 0px;
 }

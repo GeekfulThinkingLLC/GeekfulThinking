@@ -16,13 +16,16 @@
 
   <body>
     <div class="wrapper">
-    <!-- Start Top Bar -->
-      <%= render 'shared/nav_head' %>
-    <!-- End Top Bar -->
+      <div class="header">
+      <!-- Start Top Bar -->
+        <%= render 'shared/nav_head' %>
+      <!-- End Top Bar -->
+      </div>
 
-    <%= yield %>
-    <%= render 'shared/footer' unless controller_name == 'sessions' || controller_name == 'registrations' %>
+      <%= yield %>
+      <div class="push"></div>
     </div>
+    <%= render 'shared/footer' unless controller_name == 'sessions' || controller_name == 'registrations' %>
 
   </body>
 </html>
