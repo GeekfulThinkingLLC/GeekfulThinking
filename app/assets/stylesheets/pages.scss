@@ -6,10 +6,12 @@
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
 }
 
-.footer {
+.footer, .push {
     padding-top: 50px;
+    height: 155px;
 }
 
 .callout {
@@ -24,4 +26,8 @@
 
 .footer-menu {
 	margin-top: 40px;
+}
+
+html, body {
+    height: 100%;
 }
