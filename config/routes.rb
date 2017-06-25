@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about'
 
+  get 'mission', to: 'pages#mission'
+
   get 'terms', to: 'pages#terms'
 
   get 'privacy', to: 'pages#privacy'

@@ -63,6 +63,22 @@
     background-size: cover;
 }
 
+.new-consultation {
+	background: url(hustle.jpg) no-repeat center center fixed;
+	    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.about {
+	background: url(aboutpage.png) no-repeat center center fixed;
+	    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .img-styles {
 	width: 100%;
 	height: 500px;
@@ -75,13 +91,16 @@
 .mission-title {
 }
 
-.social-text p {
-  
+.main-row p {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 600;
 }
 
 .main-row {
 	padding: 30px;
-	background-color: #d7d7d7
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
 }
 
 /*
