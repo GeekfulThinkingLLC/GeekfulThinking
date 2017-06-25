@@ -2,32 +2,3 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-}
-
-.footer, .push {
-    padding-top: 50px;
-    height: 155px;
-}
-
-.callout {
-	margin: 0px;
-	border: none;
-	border-radius: none;
-}
-
-.callout.large {
-	padding: 15px;
-}
-
-.footer-menu {
-	margin-top: 40px;
-}
-
-html, body {
-    height: 100%;
-}

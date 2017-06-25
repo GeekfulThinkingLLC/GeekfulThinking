@@ -73,3 +73,49 @@
 	padding: 30px;
 	background-color: #d7d7d7
 }
+
+/*
+* footer styles
+*/
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+.footer, .push {
+    padding-top: 50px;
+    height: 155px;
+}
+
+.callout {
+	margin: 0px;
+	border: none;
+	border-radius: none;
+}
+
+.callout.large {
+	padding: 15px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.footer-menu {
+	margin-top: 40px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.top-bar {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.top-bar, .top-bar ul {
+	background-color: rgba(0, 0, 0, 0);	
+}
+
+/*
+* end of footer styles
+*/
