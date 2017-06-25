@@ -1,6 +1,13 @@
-<div class="top-bar">
+<div class="title-bar" data-responsive-toggle="animated-menu" data-hide-for="medium">
+  <div class="title-bar-title mobile-menu-text">
+    <%= link_to "Geekful Thinking", root_path %>    
+  </div>
+  <button class="fa fa-bars float-right" type="button" data-toggle></button>
+</div>
+
+<div class="top-bar" id="animated-menu" data-animate="slide-in-left slide-out-right">
   <div class="top-bar-left">
-    <ul class="menu">
+    <ul class="menu medium-horizontal hide-for-small-only">
       <li class="nav-logo"><%= link_to "Geekful Thinking LLC", root_path %></li>
     </ul>
   </div>
@@ -16,3 +23,26 @@
     </ul>
   </div>
 </div>
+
+<!-- <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li>
+        <a href="#">One</a>
+        <ul class="menu vertical">
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </div>
+</div> -->

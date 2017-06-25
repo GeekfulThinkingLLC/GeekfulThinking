@@ -30,6 +30,28 @@
 	padding-left: 20px;
 }
 
+.mobile-menu-text {
+	font-family: 'Frijole', cursive;
+}
+
+.mobile-menu-text a {
+	text-decoration: none;
+	color: black;
+}
+
+.title-bar {
+	background-color: rgba(0, 0, 0, 0);
+	color: black;
+}
+
+.menu-icon {
+	margin-top: 5px;
+}
+
+.menu-icon button {
+	color: black;
+}
+
 .nav-logo a {
 	text-decoration: none;
 	color: black;
@@ -186,4 +208,26 @@ html, body {
 
 /*
 * end of footer styles
+*/
+
+/*
+* javascript load
+*/
+
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+/*
+* end javascript load
 */
