@@ -1,3 +1,11 @@
 <h1>consultation index page</h1>
 
-<%= @consultation.inspect %>
+
+<% @consultations.each do |c| %>
+	<%= c.company_name %><br>
+	<%= c.name %><br>
+	<%= c.phone_number %><br>
+	<%= c.email %><br>
+	<%= c.description %><br>
+	<%= c.created_at %><br>
+<% end %>
