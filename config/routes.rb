@@ -4,8 +4,6 @@ Rails.application.routes.draw do
 
   resources :consultations
 
-  get 'contact', to: 'pages#contact'
-
   get 'about', to: 'pages#about'
 
   get 'terms', to: 'pages#terms'

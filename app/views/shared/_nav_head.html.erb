@@ -7,7 +7,6 @@
   <div class="top-bar-right">
     <ul class="menu nav-links">
       <li><%= link_to "Consultations", new_consultation_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
       <li><%= link_to "About", about_path %></li>
       <% if logged_in?(:admin) %>
         <li><%= link_to "Leads Generated", consultations_path %></li>
