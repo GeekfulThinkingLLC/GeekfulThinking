@@ -2,23 +2,33 @@
   <div class="callout large secondary">
     <div class="row">
       <div class="large-6 columns">
-        <h5>Vivamus Hendrerit Arcu Sed Erat Molestie</h5>
-        <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit.</p>
-      </div>
-
-      <div class="large-4 columns">
         <ul class="menu vertical text-center footer-menu">
-          <li>Contact</li>
-          <li>support@geekfulthinking.com</li>
+          <li><h4>Geekful Thinking LLC</h4></li>
+          <li>7052 S Cherry Leaf Dr, West Jordan UT, 84084</li>
+        </ul>
+        <div class='horizontal text-center fa-icon-padding'><%= link_to "Terms", terms_path, class: "footer-links" %> | <%= link_to "Privacy", privacy_path, class: "footer-links" %> | <%= link_to "About Geekful", about_path, class: "footer-links" %>
+        </div>
+        <ul class="menu vertical text-center footer-menu1">
+          <li>&copy Geekful Thinking | 2017</li>
+          <hr>
+          <li class="footer-quote"><strong>"No person will make a great business who wants to do it all himself or get all the credit" -Andrew Carnegie</strong></li>
         </ul>
       </div>
 
-      <div class="large-2 columns">
-        <ul class="menu horizontal float-right footer-menu">
-            <li><%= link_fa_to 'facebook-official fa-2x', '', 'https://www.facebook.com/GeekfulThinking/' %></li>
-            <!-- <li><%= link_fa_to 'youtube fa-2x', '', 'http://www.youtube.com' %></li> -->
-            <li><%= link_fa_to 'linkedin-square fa-2x', '', 'https://www.linkedin.com/company-beta/18115533' %></li>
+      <div class="large-6 columns footer-contact-styles">
+        <ul class="menu vertical text-center footer-menu">
+          <li><h4>Call Us</h4></li>
+          <li><strong>(801) 879-3433</strong></li>
+          <li><h4>Email Us</h4></li>
+          <li><strong>support@geekfulthinking.com</strong></li>
+          <li><h4>Visit our Social Media</h4></li>
         </ul>
+
+        <div class='horizontal text-center fa-icon-padding'>
+            <%= link_fa_to 'facebook-official fa-2x', '', 'https://www.facebook.com/GeekfulThinking/' %>
+              <!-- <li><%= link_fa_to 'youtube fa-2x', '', 'http://www.youtube.com' %></li> -->
+           <%= link_fa_to 'linkedin-square fa-2x', '', 'https://www.linkedin.com/company-beta/18115533' %>
+        </div>
       </div>
     </div>
   </div>

@@ -49,8 +49,11 @@
 
 
 .home {
-	background: url(backgroundhome.png);
-	background-size: 100%;
+	background: url(backgroundhome.png) no-repeat center center fixed;
+	    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .img-styles {
@@ -89,6 +92,14 @@
     height: 155px;
 }
 
+.footer-contact-styles {
+	margin-bottom: 25px;
+}
+
+.footer-links {
+	font-size: 1.2em;
+}
+
 .callout {
 	margin: 0px;
 	border: none;
@@ -101,7 +112,18 @@
 }
 
 .footer-menu {
-	margin-top: 40px;
+	color: #FF1111;
+}
+
+.footer-menu1 {
+	color: #FF1111;
+}
+
+.footer-quote {
+	font-size: 1.1em;
+	color: #1779BA;
+	background-color: #424242;
+	border-radius: 8px;
 }
 
 html, body {
@@ -114,6 +136,10 @@ html, body {
 
 .top-bar, .top-bar ul {
 	background-color: rgba(0, 0, 0, 0);	
+}
+
+.fa-icon-padding {
+	padding: 0px 10px 0px 10px;
 }
 
 /*
