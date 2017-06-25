@@ -40,6 +40,8 @@
 }
 
 .nav-links li a {
+	font-family: impact;
+	letter-spacing: 2px;
 	font-size: 1.2em;
 	color: black;
 	margin-top: 5px;
@@ -47,7 +49,8 @@
 }
 
 .nav-links li a:hover {
-	background-color: white;
+	background-color: #FF1111;
+	color: white;
 	border-radius: 15px;
 }
 
@@ -97,11 +100,16 @@
 }
 
 .footer-contact-styles {
-	margin-bottom: 25px;
+	
 }
 
 .footer-links {
 	font-size: 1.2em;
+	color: #ff1111;
+}
+
+.footer-links:hover {
+	color: white;
 }
 
 .callout {
@@ -112,22 +120,33 @@
 
 .callout.large {
 	padding: 15px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .footer-menu {
-	color: #FF1111;
+	color: #f6f6f6;
 }
 
 .footer-menu1 {
-	color: #FF1111;
+	color: #f6f6f6;
 }
 
 .footer-quote {
 	font-size: 1.1em;
-	color: #1779BA;
-	background-color: #424242;
+	color: #ff1111;
 	border-radius: 8px;
+}
+
+.footer-quote:hover {
+	background-color: white;
+}
+
+.icon-link a {
+	color: #ff1111;
+}
+
+.icon-link a:hover {
+	color: white;
 }
 
 html, body {
