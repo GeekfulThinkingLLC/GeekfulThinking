@@ -12,12 +12,16 @@
  *
  *= require_tree .
  *= require_self
+ *= require gritter
  *= require foundation_and_overrides
  *= require font-awesome
- *= require gritter
-
+ *= require jquery-ui
 
  */
+
+ #gritter-notice-wrapper {
+ 	z-index:2147483647;
+ }
 
 .nav-logo {
 	font-family: 'Frijole', cursive;
