@@ -15,7 +15,7 @@ class ConsultationsController < ApplicationController
 
     respond_to do |format|
       if @consultation.save
-        format.html { redirect_to new_consultation_path, notice: 'Consultation was saved.' }
+        format.html { redirect_to new_consultation_path, notice: 'Consultation was saved, we will be in contact with you within 24 hours.' }
       else
         format.html { redirect_to new_consultation_path, alert: 'There was a problem submitting your consultation.' }
       end
