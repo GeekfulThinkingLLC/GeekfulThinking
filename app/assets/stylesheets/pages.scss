@@ -4,7 +4,7 @@
 
 @import 'gritter';
 
-.form-padding {
+.card-padding {
 	padding: 10px 20rem 30px 20rem;
 }
 
@@ -76,8 +76,19 @@ label {
 
 /*End of home page card styles*/
 
+.terms-bold-underline {
+	font-weight: 600;
+	text-decoration: underline;
+}
 
+.terms-bold {
+	font-weight: 600;
+}
 
+.geekful-container {
+	padding-left: 40px;
+	padding-right: 40px;
+}
 
 
 
