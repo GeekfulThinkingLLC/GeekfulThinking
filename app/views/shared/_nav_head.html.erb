@@ -13,9 +13,9 @@
   </div>
   <div class="top-bar-right">
     <ul class="menu nav-links">
-      <li><%= link_to "Consultations", new_consultation_path %></li>
       <li><%= link_to "About", about_path %></li>
       <li><%= link_to "Social Mission", mission_path %></li>
+      <li><%= link_to "Consultations", new_consultation_path %></li>
       <% if logged_in?(:admin) %>
         <li><%= link_to "Leads Generated", consultations_path %></li>
         <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>

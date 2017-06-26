@@ -90,12 +90,77 @@ label {
 	padding-right: 40px;
 }
 
+.home-page-services1 {
+    margin-top: 25px;
+    background-color: rgba(0,0,0,.4);
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+}
+
+.home-page-services2 {
+    margin-top: 325px;
+    background-color: rgba(0,0,0,.4);
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+}
+
+.home-page-services3 {
+    margin-top: 25px;
+    background-color: rgba(0,0,0,.4);
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+}
+
+.home-page-services1 p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.home-page-services2 p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.home-page-services3 p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
 
 
 
+.home-page-services1 h4 {
+    font-family: 'Frijole', cursive;
+        color: #ff1111;
+}
 
+.home-page-services2 h4 {
+    font-family: 'Frijole', cursive;
+        color: #ff1111;
+}
 
+.home-page-services3 h4 {
+    font-family: 'Frijole', cursive;
+        color: #ff1111;
+}
 
+.home-page-btn {
+    margin-top: 25px;
+    background-color: #FF1111;
+    color: white;
+    border-radius: 8px;
+    font-family: impact;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+
+.home-page-btn a:hover {
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+}
 
 
 
