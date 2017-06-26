@@ -18,3 +18,8 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+var http = require("http");
+setInterval(function() {
+    http.get("http://<your app name>.herokuapp.com");
+}, 1800000); // every 5 minutes (300000)
