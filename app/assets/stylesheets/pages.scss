@@ -155,14 +155,6 @@ label {
     border-radius: 8px;
 }
 
-.home-title-buttons {
-	background-color: rgba(0,0,0,0);
-}
-
-.home-title-buttons:hover {
-	background-color: rgba(0,0,0,0);
-}
-
 .home-button {
     width: 100%;
     background-color: rgba(0,0,0,.7);
@@ -170,4 +162,8 @@ label {
 
 .home-button:hover {
     background-color: rgba(0,0,0,.2);
+}
+
+.hosting-caret-padding {
+    margin-left: 35px;
 }
