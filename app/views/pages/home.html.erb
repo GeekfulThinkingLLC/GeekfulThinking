@@ -1,13 +1,52 @@
 <body class="home">
   <div class="row">
-    <div class="small-12 medium-4 columns text-center home-page-services1">
-	    <h4>Development/Design</h4>
+		<div class="row">
+			<div class="small-12 medium-4 columns" data-responsive-toggle="development-design" data-hide-for=false>
+				<button class="text-center home-page-services home-button" type="button" data-toggle="development-design">
+					<h4>Development</h4>
+					<h4>& Design</h4>
+				</button>
+					<div class="text-center home-page-services" id="development-design" data-animate="scale-in-up scale-out-down">
+				    <p>Specializing in E-commerce for small and large businesses. We understand the need and power behind web presence, SEO, and user friendliness. We want a website that you can be proud of, and will stand out in the online world!</p>
+					</div>
+			</div>
+
+			<div class="small-12 medium-4 columns text-center"></div>
+
+			<div class="small-12 medium-4 columns" data-responsive-toggle="media-production" data-hide-for=false>
+				<button class="text-center home-page-services home-button" type="button" data-toggle="media-production">
+					<h4>Media</h4> 
+					<h4>Production</h4>
+				</button>
+				<div class="text-center home-page-services" id="media-production" data-animate="scale-in-up scale-out-down">
+			    <p>Want to have custom photos and videos for marketing or content on your website? Look no further, we can produce both aerial videos and still photography! Get that custom look you want to have for your site!</p>
+				</div>
+			</div>
+	  </div>
+
+	  <div class="row">
+			<div class="small-12 medium-4 columns medium-centered text-center" data-responsive-toggle="hosting" data-hide-for=false>
+				<button class="home-page-services home-button" type="button" data-toggle="hosting">
+					<h4>Hosting</h4>
+				</button>
+				<div class="home-page-services" id="hosting" data-animate="scale-in-up scale-out-down">
+			    <p>Don't quite know where to look or go to host your website or domain? Here at Geekful Thinking we have the ability to host all of those services for you. We would maintain your website, domain, and hosting service!</p>
+				</div>
+			</div>
+	  </div>
+  </div>
+</body>
+
+<!-- start of old home page -->
+<!--<div class="row">
+		<div class="small-12 medium-4 columns text-center home-page-services">
+	    <h4>Development & Design</h4>
 	    <hr>
 	    <p>
 	        Specializing in E-commerce for small and large businesses. We understand the need and power behind web presence, SEO, and user friendliness. We want a website that you can be proud of, and will stand out in the online world!
 	    </p>
     </div>
-    <div class="small-12 medium-4 columns text-center home-page-services3">
+    <div class="small-12 medium-4 columns text-center home-page-services">
 	    <h4>Hosting</h4>
 	    <hr>
 	    <p>
@@ -16,11 +55,11 @@
     </div>
   </div>
   <div class="row">
-	  <div class="small-12 medium-4 medium-centered columns text-center home-page-services2">
+	  <div class="small-12 medium-4 medium-centered columns text-center home-page-services">
 	    <h4>Media Production</h4>
 	    <hr>
 	    <p>
-	        Want to have custom photos and videos for marketing or content on your website? Look no further, we can produce arial footage, arial videos, and still photography! Get that custom look you want to have for your site!  
+	        Want to have custom photos and videos for marketing or content on your website? Look no further, we can produce both aerial videos and still photography! Get that custom look you want to have for your site!  
 	    </p>
 	  </div>
 	</div>
@@ -28,18 +67,4 @@
       <div class="small-12 medium-4 medium-centered columns">
           <%= link_to "Get Your Consultation Now", new_consultation_path, class: "expanded button home-page-btn" %>
       </div>
-  </div>
-</body>
-
-<!-- <div class="small-12 medium-4 columns text-center  home-page-services1">
-
-	<div data-responsive-toggle="development-design">
-		<button type="button" data-toggle><h4>Development/Design</h4></button>
-  </div>
-
-	<div id="development-design" data-hide-for="medium">
-    <p>Specializing in E-commerce for small and large businesses. We understand the need and power behind web presence, SEO, and user friendliness. We want a website that you can be proud of, and will stand out in the online world!</p>
-	</div>
-
-</div>
- -->
+  </div> -->

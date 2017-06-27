@@ -105,58 +105,20 @@ label {
     padding: 40px;
 }
 
-.home-page-services1 {
+.home-page-services {
     margin-top: 25px;
     background-color: rgba(0,0,0,.4);
     padding: 10px 15px 10px 15px;
     border-radius: 8px;
 }
 
-.home-page-services2 {
-    margin-top: 25px;
-    background-color: rgba(0,0,0,.4);
-    padding: 10px 15px 10px 15px;
-    border-radius: 8px;
-}
-
-.home-page-services3 {
-    margin-top: 25px;
-    background-color: rgba(0,0,0,.4);
-    padding: 10px 15px 10px 15px;
-    border-radius: 8px;
-}
-
-.home-page-services1 p {
+.home-page-services p {
     color: white;
     font-size: 1.2em;
     font-weight: 500;
 }
 
-.home-page-services2 p {
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.home-page-services3 p {
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-
-
-.home-page-services1 h4 {
-    font-family: 'Frijole', cursive;
-        color: #ff1111;
-}
-
-.home-page-services2 h4 {
-    font-family: 'Frijole', cursive;
-        color: #ff1111;
-}
-
-.home-page-services3 h4 {
+.home-page-services h4 {
     font-family: 'Frijole', cursive;
         color: #ff1111;
 }
@@ -184,12 +146,11 @@ label {
 	background-color: rgba(0,0,0,0);
 }
 
+.home-button {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+}
 
-
-
-
-
-
-
-
-
+.home-button:hover {
+    background-color: rgba(0,0,0,.2);
+}
