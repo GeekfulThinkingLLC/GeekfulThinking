@@ -19,7 +19,14 @@
 
  */
 
+
  #argin-card {
+}
+ #gritter-notice-wrapper {
+ 	z-index:2147483647;
+ }
+
+ #margin-card {
  	margin-left: 3rem;
  }
 
@@ -163,7 +170,7 @@
 
 .main-row {
 	padding: 30px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 5px;
 }
 
@@ -203,7 +210,7 @@
 
 .callout.large {
 	padding: 15px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .footer-menu {
