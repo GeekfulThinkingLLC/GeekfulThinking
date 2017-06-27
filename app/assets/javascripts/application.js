@@ -21,5 +21,5 @@ $(function(){ $(document).foundation(); });
 
 var http = require("http");
 setInterval(function() {
-    http.get("http://geekfulthinking.herokuapp.com");
+    http.get("www.geekfulthinking.com");
 }, 300000); // every 5 minutes (300000)
