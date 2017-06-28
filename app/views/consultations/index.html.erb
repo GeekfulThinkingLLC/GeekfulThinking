@@ -1,6 +1,7 @@
+<body class="leads">
 <h3 class="text-center">Leads</h3>
 
-<div class="table-scroll geekful-container">
+<div class="table-scroll geekful-container small-12 medium-12 columns">
 	<table class="hover stack">
 	  <thead>
 	    <tr>
@@ -10,21 +11,24 @@
 	      <th width="200">Company Name</th>
 	      <th width="200">Email</th>
 	      <th width="150">Phone Number</th>
-	      <th>Description</th>
+	      <th width="450">Description</th>
+	      <th></th>
 	    </tr>
 	  </thead>
 	  <tbody>
-	  <% @consultations.each do |c| %>
-	    <tr>
-	    	<td><%= c.id %></td>
-	      <td><%= c.created_at.strftime("%a %b %d %r") %></td>
-	      <td><%= c.name %></td>
-	      <td><%= c.company_name %></td>
-	      <td><%= c.email %></td>
-	      <td><%= c.phone_number %></td>
-	      <td><%= c.description %></td>
-	    </tr>
-	<% end %>
+		  <% @consultations.each do |c| %>
+		    <tr>
+		    	<td>#<%= c.id %></td>
+		      <td><%= c.created_at.strftime("%a %b %d %r") %></td>
+		      <td><%= c.name %></td>
+		      <td><%= c.company_name %></td>
+		      <td><%= c.email %></td>
+		      <td><%= c.phone_number %></td>
+		      <td><%= c.description %></td>
+		      <td><%= link_to "", c, method: :delete, data: { confirm: "You sure?" }, class: "fa fa-trash-o" %></td>
+		    </tr>
+			<% end %>
 	  </tbody>
 	</table>
 </div>
+</body>

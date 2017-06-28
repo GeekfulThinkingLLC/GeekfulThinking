@@ -1,5 +1,5 @@
 class ConsultationsController < ApplicationController
-	
+	before_action :set_consultation, only: [:destroy]
   access all: [:create, :new], admin: :all
 
   def index
@@ -22,9 +22,18 @@ class ConsultationsController < ApplicationController
     end
   end
 
+  def destroy
+    @consultation.delete
+    redirect_to consultations_path, notice: 'Consultation was deleted'
+  end
+
   private
 
   def consultation_params
     params.require(:consultation).permit(:name, :description, :phone_number, :email, :company_name)
+  end
+
+  def set_consultation
+    @consultation = Consultation.find(params[:id])
   end
 end
