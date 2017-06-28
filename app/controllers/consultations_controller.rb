@@ -25,6 +25,6 @@ class ConsultationsController < ApplicationController
   private
 
   def consultation_params
-    params.require(:consultation).permit(:name, :description, :phone_number, :email)
+    params.require(:consultation).permit(:name, :description, :phone_number, :email, :company_name)
   end
 end
