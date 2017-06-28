@@ -1,43 +1,41 @@
 <body class="new-consultation">
-<h3 class='text-center consultation-header'>Give Us An Idea Of What You're Looking For!</h3>
+  <h3 class='text-center consultation-header'>Give Us An Idea Of What You're Looking For!</h3>
 
-<div class='row'>
-<div class="row-padding">
-    <div class="card" id="margin-card">
-  <%= form_for @consultation do |f| %>
+  <div class='row'>
+    <div class="card">
+      <%= form_for @consultation do |f| %>
 
-        <div class="card-divider small-12 medium-6 columns">
-          <%= f.label :name %>
-          <%= f.text_field :name, autofocus: true, placeholder: 'Name', class: 'form-text placeholder-text' %>
-      	</div>
+      <div class="card-divider small-12 medium-6 columns">
+        <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true, placeholder: 'Name', class: 'form-text placeholder-text' %>
+    	</div>
 
-        <div class="card-divider small-12 medium-6 columns">
-          <%= f.label :company_name %>
-          <%= f.text_field :company_name, placeholder: 'Optional', class: 'form-text placeholder-text' %>
-        </div>
+      <div class="card-divider small-12 medium-6 columns">
+        <%= f.label :company_name %>
+        <%= f.text_field :company_name, placeholder: 'Optional', class: 'form-text placeholder-text' %>
+      </div>
 
-        <div class="card-divider small-12 medium-6 columns">
-          <%= f.label :email %>
-          <%= f.email_field :email, placeholder: 'Email', class: 'form-text placeholder-text' %>
-        </div>
+      <div class="card-divider small-12 medium-6 columns">
+        <%= f.label :email %>
+        <%= f.email_field :email, placeholder: 'Email', class: 'form-text placeholder-text' %>
+      </div>
 
-        <div class="card-divider small-12 medium-6 columns">
-          <%= f.label :phone_number %>
-          <%= f.text_field :phone_number, placeholder: 'Phone Number', class: 'form-text placeholder-text' %>
-        </div>
+      <div class="card-divider small-12 medium-6 columns">
+        <%= f.label :phone_number %>
+        <%= f.text_field :phone_number, placeholder: 'Phone Number', class: 'form-text placeholder-text' %>
+      </div>
 
-        <div class="card-divider small-12 medium-12 columns">
-          <%= f.label :description %>
-          <%= f.text_area :description, placeholder: 'Description', rows: 7, class: 'form-text placeholder-text' %>
-        </div>
+      <div class="card-divider small-12 medium-12 columns">
+        <%= f.label :description %>
+        <%= f.text_area :description, placeholder: 'Description', rows: 7, class: 'form-text placeholder-text' %>
+      </div>
 
 
-        <div class="card-divider">
-          <%= f.submit "Submit Consultation", class: 'button expanded' %>
-        </div>
+      <div class="card-divider">
+        <%= f.submit "Submit Consultation", class: 'button expanded' %>
+      </div>
 
-  <% end %>
+     <% end %>
     </div>
-  </div>
   </div>
 <body>
