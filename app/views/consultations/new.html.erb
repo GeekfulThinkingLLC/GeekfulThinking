@@ -7,7 +7,7 @@
 
       <div class="card-divider small-12 medium-6 columns">
         <%= f.label :name %>
-        <%= f.text_field :name, autofocus: true, placeholder: 'Name', class: 'form-text placeholder-text' %>
+        <%= f.text_field :name, autofocus: true, placeholder: 'Name', class: 'form-text placeholder-text', required: true %>
     	</div>
 
       <div class="card-divider small-12 medium-6 columns">
@@ -17,17 +17,17 @@
 
       <div class="card-divider small-12 medium-6 columns">
         <%= f.label :email %>
-        <%= f.email_field :email, placeholder: 'Email', class: 'form-text placeholder-text' %>
+        <%= f.email_field :email, placeholder: 'Email', class: 'form-text placeholder-text', required: true %>
       </div>
 
-      <div class="card-divider small-12 medium-6 columns">
-        <%= f.label :phone_number %>
-        <%= f.text_field :phone_number, placeholder: 'Phone Number', class: 'form-text placeholder-text' %>
-      </div>
+<!--       <div class="card-divider small-12 medium-6 columns">
+        <%#= f.label :phone_number %>
+        <%#= f.telephone_field :phone_number, placeholder: 'XXX-XXX-XXXX', class: 'form-text placeholder-text', required: true, maxlength: 12, data-js: "form-text" %>
+      </div> -->
 
       <div class="card-divider small-12 medium-12 columns">
         <%= f.label :description %>
-        <%= f.text_area :description, placeholder: 'Description', rows: 7, class: 'form-text placeholder-text' %>
+        <%= f.text_area :description, placeholder: 'What can we do for you?', rows: 7, class: 'form-text placeholder-text', required: true %>
       </div>
 
 
@@ -36,6 +36,12 @@
       </div>
 
      <% end %>
+
+<!--      <script>
+     $('#test').inputmask('Regex', { 
+          regex: "^\d+$"
+      });
+     </script> -->
     </div>
   </div>
 <body>

@@ -19,7 +19,18 @@
 
 $(function(){ $(document).foundation(); });
 
-var http = require("http");
-setInterval(function() {
-    http.get("www.geekfulthinking.com");
-}, 300000); // every 5 minutes (300000)
+
+// http = require('http')
+// setInterval (->
+//   http.get 'www.geekfulthinking.com'
+//   return
+// ), 300000
+// every 5 minutes (300000)
+
+/**
+ * Since inputs are replace elements(1), using 
+ * pseudo-elements like ::after will not work.
+ * Thus, the data-placeholder on the labels.
+ *
+ * (1) http://reference.sitepoint.com/css/replacedelements
+ */ 
