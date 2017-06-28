@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170625004357) do
   create_table "consultations", force: :cascade do |t|
     t.string   "company_name"
     t.string   "name"
-    t.bigint   "phone_number"
+    t.string   "phone_number"
     t.string   "email"
     t.text     "description"
     t.datetime "created_at",   null: false

@@ -4,7 +4,7 @@ class CreateConsultations < ActiveRecord::Migration[5.0]
     	
     	t.string 	:company_name
     	t.string 	:name
-    	t.integer :phone_number, :limit => 8
+    	t.string :phone_number
     	t.string 	:email
     	t.text    :description
 
