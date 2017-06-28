@@ -31,14 +31,15 @@
  }
 
 .nav-logo {
-	font-family: 'Frijole', cursive;
-	font-size: 1.9em;
-	padding-top: 10px;
-	padding-left: 20px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.8em;
+	padding-left: 10px;
+	font-weight: 400;
 }
 
 .mobile-menu-text {
-	font-family: 'Frijole', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
 }
 
 .mobile-menu-text a {
@@ -60,6 +61,8 @@
 }
 
 .nav-logo a {
+	font-size: 1.8em;
+	font-family: 'Indie Flower', cursive;
 	text-decoration: none;
 	color: black;
 }
@@ -69,7 +72,7 @@
 }
 
 .nav-links li a {
-	font-family: impact;
+	font-family: 'Roboto', sans-serif;
 	letter-spacing: 2px;
 	font-size: 1.2em;
 	color: black;
@@ -152,17 +155,20 @@
 }
 
 .main-row1 h3 {
+	font-family: 'Oswald', sans-serif;
   color: white;
   font-weight: 600;
 }
 
 .main-row1 p {
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.3em;
   color: white;
   font-weight: 600;
 }
 
 .main-row p {
+	font-family: 'Oswald', sans-serif;
   font-size: 1.3em;
   color: white;
   font-weight: 600;
@@ -172,6 +178,10 @@
 	padding: 30px;
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 5px;
+}
+
+.consultation-header {
+	font-family: 'Roboto', sans-serif;
 }
 
 /*
@@ -193,6 +203,7 @@
 }
 
 .footer-links {
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.2em;
 	color: #ff1111;
 }
@@ -213,14 +224,22 @@
 }
 
 .footer-menu {
+	font-family: 'Roboto', sans-serif;
+	color: #f6f6f6;
+}
+
+.footer-menu h4 {
+	font-family: 'Roboto', sans-serif;
 	color: #f6f6f6;
 }
 
 .footer-menu1 {
+	font-family: 'Roboto', sans-serif;
 	color: #f6f6f6;
 }
 
 .footer-quote {
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.1em;
 	color: #ff1111;
 	border-radius: 8px;
