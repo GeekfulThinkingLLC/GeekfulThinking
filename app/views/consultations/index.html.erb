@@ -1,11 +1,30 @@
-<h1>consultation index page</h1>
+<h3 class="text-center">Leads</h3>
 
-
-<% @consultations.each do |c| %>
-	<%= c.company_name %><br>
-	<%= c.name %><br>
-	<%= c.phone_number %><br>
-	<%= c.email %><br>
-	<%= c.description %><br>
-	<%= c.created_at %><br>
-<% end %>
+<div class="table-scroll geekful-container">
+	<table class="hover stack">
+	  <thead>
+	    <tr>
+	    	<th>#</th>
+	      <th width="240">Date submitted</th>
+	      <th width="175">Name</th>
+	      <th width="200">Company Name</th>
+	      <th width="200">Email</th>
+	      <th width="150">Phone Number</th>
+	      <th>Description</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	  <% @consultations.each do |c| %>
+	    <tr>
+	    	<td><%= c.id %></td>
+	      <td><%= c.created_at.strftime("%a %b %d %r") %></td>
+	      <td><%= c.name %></td>
+	      <td><%= c.company_name %></td>
+	      <td><%= c.email %></td>
+	      <td><%= number_to_phone(c.phone_number) %></td>
+	      <td><%= c.description %></td>
+	    </tr>
+	<% end %>
+	  </tbody>
+	</table>
+</div>
