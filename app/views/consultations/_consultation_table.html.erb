@@ -14,8 +14,8 @@
 			      <th>X</th>
 		    	</tr>
 		  	</thead>
-		  	<tbody>
 			  	<% @consultations.each do |c| %>
+		  	<tbody>
 				    <tr>
 				    	<td>#<%= c.id %></td>
 				      <td><%= c.created_at.strftime("%a %b %d %r") %></td>
@@ -23,11 +23,11 @@
 				      <td><%= c.company_name %></td>
 				      <td><%= c.email %></td>
 				      <td><%= c.phone_number %></td>
-				      <td><div id="table-height"><%= c.description %></div></td>
+				      <td><div class="table-height"><%= c.description %></div></td>
 				      <td><%= link_to "", c, method: :delete, data: { confirm: "You sure?" }, class: "fa fa-trash-o fa-lg" %></td>
 				    </tr>
-					<% end %>
 		  	</tbody>
+					<% end %>
 			</table>
 		</div>
 <% else %>

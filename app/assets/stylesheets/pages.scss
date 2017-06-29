@@ -12,9 +12,9 @@ thead th {
   text-align: center;
 }
 
-#table-height {
+.table-height {
   max-height: 10rem;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .card-divider {
