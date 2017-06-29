@@ -169,9 +169,10 @@ label {
     font-size: 1.2em;
 }
 
-.home-page-btn a:hover {
+.home-page-btn:hover {
     color: white;
     border-radius: 8px;
+    -webkit-transition: all .5s linear;
 }
 
 .home-button {
