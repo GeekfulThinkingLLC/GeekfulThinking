@@ -1,13 +1,7 @@
+<%= render 'shared/mobile_nav' %>
 <div data-sticky-container>
-  <div id="navbarx" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
-    <div class="title-bar" data-responsive-toggle="animated-menu" data-hide-for="medium">
-      <div class="title-bar-title mobile-menu-text">
-        <%= link_to "Geekful Thinking LLC", root_path %>    
-      </div>
-      <button class="fa fa-bars float-right" type="button" data-toggle="animated-menu"></button>
-    </div>
-
-    <div class="top-bar">
+  <div data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
+    <div class="top-bar" id="navbar-scroll">
       <div class="top-bar-left">
         <ul class="menu medium-horizontal hide-for-small-only">
           <li class="nav-logo"><%= link_to "Geekful Thinking LLC", root_path %></li>
@@ -25,18 +19,5 @@
         </ul>
       </div>
     </div>
-    <!-- start of mobile nav -->
-    <div id="animated-menu" data-animate="hinge-in-from-top hinge-out-from-top">
-      <ul class="vertical mobile-nav-links hide-for-medium">
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Social Mission", mission_path %></li>
-        <li><%= link_to "Consultations", new_consultation_path %></li>
-        <% if logged_in?(:admin) %>
-          <li><%= link_to "Leads", consultations_path %></li>
-          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-        <% end %>
-      </ul>
-    </div>
-    <!-- end of mobile nav -->
   </div>
 </div>
