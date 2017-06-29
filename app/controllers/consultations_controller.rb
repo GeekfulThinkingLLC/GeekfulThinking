@@ -1,9 +1,13 @@
 class ConsultationsController < ApplicationController
 	before_action :set_consultation, only: [:destroy]
-  access all: [:create, :new], admin: :all
+  access all: [:create, :new, :index], admin: :all
 
   def index
-		@consultations = Consultation.all
+    if logged_in?(:admin)
+		  @consultations = Consultation.all
+    else
+      redirect_to root_path, alert: "You are not authorized to view this page"
+    end
 	end
 
 	def new
