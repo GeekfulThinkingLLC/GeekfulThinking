@@ -5,8 +5,8 @@
 		  	<thead>
 		    	<tr>
 			    	<th>#</th>
-			      <th width="240">Date submitted</th>
-			      <th width="175">Name</th>
+			      <th width="150">Date submitted</th>
+			      <th width="150">Name</th>
 			      <th width="200">Company Name</th>
 			      <th width="200">Email</th>
 			      <th width="150">Phone #</th>
@@ -16,9 +16,9 @@
 		  	</thead>
 			  	<% @consultations.each do |c| %>
 		  	<tbody>
-				    <tr>
+				    <tr id="highlight">
 				    	<td>#<%= c.id %></td>
-				      <td><%= c.created_at.strftime("%a %b %d %r") %></td>
+				      <td><%= c.created_at.strftime("%b %d %I:%M%P") %></td>
 				      <td><%= c.name %></td>
 				      <td><%= c.company_name %></td>
 				      <td><%= c.email %></td>
