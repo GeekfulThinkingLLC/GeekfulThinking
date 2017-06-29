@@ -9,11 +9,11 @@ module ApplicationHelper
     notice = flash[:notice]
 
     if alert
-      js add_gritter(alert, title: "Geekful Thinking", sticky: false, image: :warning)
+      js add_gritter(alert, title: "Geekful Thinking", sticky: false, image: :warning, time: 3000)
     elsif error
       js add_gritter(error, title: "Geekful Thinking", sticky: false, image: :error)
     else notice
-      js add_gritter(notice, title: "Geekful Thinking", sticky: false, image: :success)
+      js add_gritter(notice, title: "Geekful Thinking", sticky: false, image: :success, time: 6000)
     end
     
   end

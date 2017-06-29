@@ -20,9 +20,9 @@
         <%= f.email_field :email, placeholder: 'Email', class: 'form-text placeholder-text', required: true %>
       </div>
 
-      <div class="card-divider small-12 medium-6 columns">
+      <div class="card-divider small-12 medium-6 columns" id="commentForm">
         <%= f.label :phone_number %>
-        <%= f.text_field :phone_number, placeholder: 'XXX-XXX-XXXX', class: 'form-text placeholder-text', required: true, id: "phone" %>
+        <%= f.text_field :phone_number, placeholder: 'XXX-XXX-XXXX', class: 'form-text placeholder-text', required: true, id: "phone", minlength: 14 %>
       </div>
 
       <div class="card-divider small-12 medium-12 columns">
