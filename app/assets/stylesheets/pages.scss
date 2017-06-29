@@ -9,7 +9,13 @@
 }
 
 thead th {
-    text-align: center;
+  text-align: center;
+}
+
+#table-height {
+  min-height: auto;
+  max-height: 10rem;
+  overflow-x: scroll;
 }
 
 .card-divider {
