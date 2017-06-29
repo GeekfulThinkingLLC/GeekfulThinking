@@ -167,12 +167,14 @@ label {
     border-radius: 8px;
     letter-spacing: 2px;
     font-size: 1.2em;
+    width: 100%;
 }
 
 .home-page-btn:hover {
-    color: white;
+    color: #FF1111;
     border-radius: 8px;
-    -webkit-transition: all .5s linear;
+    background-color: rgba(255,255,255,.5);
+    border: 1px solid #FF1111;
 }
 
 .home-button {
