@@ -15,9 +15,9 @@ $(document).ready ->
 	      tel = input.substr(6, 4)
 	      if area.length < 3
 	        output = '(' + area
-	      else if area.length == 3 and pre.length < 3
+	      else if area.length == 3 && pre.length < 3
 	        output = '(' + area + ')' + ' ' + pre
-	      else if area.length == 3 and pre.length == 3
+	      else if area.length == 3 && pre.length == 3
 	        output = '(' + area + ')' + ' ' + pre + '-' + tel
 	      $this.val output
 	    return
