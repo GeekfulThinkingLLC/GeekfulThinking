@@ -300,8 +300,21 @@ ul {
 */
 
 /*
-* Flippity1
+* Flippity Set
 */
+
+@keyframes flippityhover {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.flippityhover:hover {
+  transition: all 2s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  
+}
 
 @keyframes flippity {
   100% {
@@ -318,16 +331,8 @@ ul {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  animation-delay: .75s;
+  animation-delay: 1s;
 }
-
-/*
-* End of Flippity1
-*/
-
-/*
-* Flippity1
-*/
 
 @keyframes flippity2 {
   100% {
@@ -344,16 +349,8 @@ ul {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  animation-delay: 1s;
+  animation-delay: 1.25s;
 }
-
-/*
-* End of Flippity1
-*/
-
-/*
-* Flippity1
-*/
 
 @keyframes flippity3 {
   100% {
@@ -370,16 +367,8 @@ ul {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  animation-delay: 1.25s;
+  animation-delay: 1.5s;
 }
-
-/*
-* End of Flippity1
-*/
-
-/*
-* Flippity1
-*/
 
 @keyframes flippity4 {
   100% {
@@ -396,9 +385,9 @@ ul {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  animation-delay: 1.5s;
+  animation-delay: 1.75s;
 }
 
 /*
-* End of Flippity1
+* End of Flippity Set
 */
