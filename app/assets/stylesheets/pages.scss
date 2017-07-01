@@ -261,20 +261,20 @@ ul {
 }*/
 
 @keyframes pulse {
-  33% {
+  0% {
     -webkit-transform: scale(1.0);
     -ms-transform: scale(1.0);
     transform: scale(1.0);
   }
-  33% {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
+  50% {
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97);
   }
-  33% {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+  100% {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
   }
 }
 
@@ -299,21 +299,68 @@ ul {
 * End of pulse
 */
 
+@keyframes logoslide {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(5deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.logoslide {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: logoslide;
+  animation-name: logoslide;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
 /*
 * Flippity Set
 */
 
 @keyframes flippityhover {
   100% {
-    transform: rotateY(360deg);
+    transform: translate(0px, -5px);
   }
 }
 
 .flippityhover:hover {
-  transition: all 2s linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  -webkit-animation-name: flippityhover;
+  animation-name: flippityhover;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@keyframes flippityhover2 {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.flippityhover2:hover {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: flippityhover2;
+  animation-name: flippityhover2;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 @keyframes flippity {
