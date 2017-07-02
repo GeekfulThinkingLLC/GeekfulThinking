@@ -366,12 +366,12 @@ ul {
 
 @keyframes flippity {
   0% {
-    transform: translate(0px, -300px);
+    transform: translate(0px, -800px);
     opacity: 0;
   }
   100% {
     transform: translate(0px, 0px);
-    opacity: .6;
+    opacity: 1;
   }
 }
 
@@ -384,17 +384,18 @@ ul {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes flippity2 {
   0% {
-    transform: translate(0px, -300px);
+    transform: translate(0px, -800px);
     opacity: 0;
   }
   100% {
     transform: translate(0px, 0px);
-    opacity: .6;
+    opacity: 1;
   }
 }
 
@@ -408,16 +409,18 @@ ul {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   animation-delay: .25s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes flippity3 {
   0% {
-    transform: translate(0px, -300px);
+    transform: translate(0px, -800px);
     opacity: 0;
   }
   100% {
     transform: translate(0px, 0px);
-    opacity: .6;
+    opacity: 1;
   }
 }
 
@@ -431,16 +434,18 @@ ul {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   animation-delay: .5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes flippity4 {
   0% {
-    transform: translate(0px, -300px);
+    transform: translate(0px, -800px);
     opacity: 0;
   }
   100% {
     transform: translate(0px, 0px);
-    opacity: .6;
+    opacity: 1;
   }
 }
 
@@ -454,6 +459,8 @@ ul {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   animation-delay: .75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 /*
