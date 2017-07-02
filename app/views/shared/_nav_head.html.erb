@@ -9,12 +9,12 @@
       </div>
       <div class="top-bar-right">
         <ul class="menu nav-links hide-for-small-only text-right">
-          <li class="flippityhover"><%= link_to "About", about_path %></li>
-          <li class="flippityhover"><%= link_to "Social Mission", mission_path %></li>
-          <li class="flippityhover"><%= link_to "Consultations", new_consultation_path %></li>
+          <li class="navlinkhover"><%= link_to "About", about_path %></li>
+          <li class="navlinkhover"><%= link_to "Social Mission", mission_path %></li>
+          <li class="navlinkhover"><%= link_to "Consultations", new_consultation_path %></li>
           <% if logged_in?(:admin) %>
-            <li class="flippityhover"><%= link_to "Leads", consultations_path %></li>
-            <li class="flippityhover"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+            <li class="navlinkhover"><%= link_to "Leads", consultations_path %></li>
+            <li class="navlinkhover"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
           <% end %>
         </ul>
       </div>
