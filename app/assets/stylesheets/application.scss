@@ -296,3 +296,9 @@ html, body {
 * end javascript load
 */
 
+@media screen and (min-wdith: 40em) {
+  .about-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
