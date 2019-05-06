@@ -304,33 +304,6 @@ ul {
 * End of pulse
 */
 
-@keyframes logoslide {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  25% {
-    transform: rotateZ(5deg);
-  }
-  50% {
-    transform: rotateZ(-5deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-
-.logoslide {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-name: logoslide;
-  animation-name: logoslide;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  animation-delay: 1.75s;
-}
-
 /*
 * Flippity Set
 */
